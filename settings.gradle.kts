@@ -17,6 +17,8 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 
 rootProject.name = "Contactus"
+include(":data:connectivity")
+
 include(":utils:coroutines")
 include(":utils:mvi")
 include(":utils:navigation")
