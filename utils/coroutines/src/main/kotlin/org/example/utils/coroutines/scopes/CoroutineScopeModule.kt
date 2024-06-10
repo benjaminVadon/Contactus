@@ -12,6 +12,7 @@ import kotlinx.coroutines.SupervisorJob
 import javax.inject.Singleton
 
 
+@Suppress("unused")
 @Module
 @InstallIn(SingletonComponent::class)
 internal object CoroutineScopesModule {
