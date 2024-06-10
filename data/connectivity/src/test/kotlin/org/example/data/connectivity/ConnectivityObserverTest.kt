@@ -2,7 +2,6 @@ package org.example.data.connectivity
 
 import android.app.Application
 import android.net.ConnectivityManager
-import android.net.ConnectivityManager.NetworkCallback
 import android.net.NetworkCapabilities
 import androidx.core.content.getSystemService
 import io.mockk.every
@@ -10,12 +9,10 @@ import io.mockk.just
 import io.mockk.mockk
 import io.mockk.runs
 import io.mockk.slot
-import io.mockk.verify
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.test.setMain
@@ -61,7 +58,7 @@ class ConnectivityObserverTest {
         val networkCapabilities = mockk<NetworkCapabilities>()
         val connectivityObserver = ConnectivityObserver(application, scope)
         every { connectivityManager.registerDefaultNetworkCallback(any()) } just runs
-        every { connectivityManager.getNetworkCapabilities(any()) } returns  networkCapabilities
+        every { connectivityManager.getNetworkCapabilities(any()) } returns networkCapabilities
         every { networkCapabilities.hasCapability(any()) } answers { true }
         every { networkCapabilities.hasTransport(any()) } answers { true }
 

@@ -4,12 +4,10 @@ import com.android.build.gradle.internal.dsl.BaseAppModuleExtension
 import org.example.gradle.utils.apply
 import org.example.gradle.utils.configureAndroid
 import org.example.gradle.utils.configureKotlinAndroid
-import org.example.gradle.utils.implementation
 import org.gradle.accessors.dm.LibrariesForLibs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
-import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.the
 
 public class AndroidApplicationPlugin : Plugin<Project> {

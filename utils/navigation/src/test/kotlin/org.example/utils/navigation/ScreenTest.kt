@@ -69,8 +69,8 @@ class ScreenTest {
         }
     }
 
-    class ScreenState:State
-    class ScreenEvents:Event
-    class ScreenActions:Action
+    class ScreenState : State
+    class ScreenEvents : Event
+    class ScreenActions : Action
     class ScreenNav
 }

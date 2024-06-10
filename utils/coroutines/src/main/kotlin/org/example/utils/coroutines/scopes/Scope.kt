@@ -5,4 +5,4 @@ import javax.inject.Qualifier
 @Suppress("unused")
 @Retention(AnnotationRetention.RUNTIME)
 @Qualifier
-annotation class Scope(val scope:AppCoroutineScopes)
+annotation class Scope(val scope: AppCoroutineScopes)

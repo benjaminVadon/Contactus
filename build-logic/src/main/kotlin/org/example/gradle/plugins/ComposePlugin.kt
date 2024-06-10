@@ -59,8 +59,8 @@ private fun Project.buildComposeMetricsParameters(): List<String> {
             add("-P")
             add(
                 "plugin" +
-                    ":androidx.compose.compiler.plugins.kotlin" +
-                    ":metricsDestination=${metricsFolder.absolutePath}",
+                        ":androidx.compose.compiler.plugins.kotlin" +
+                        ":metricsDestination=${metricsFolder.absolutePath}",
             )
         }
 
@@ -71,8 +71,8 @@ private fun Project.buildComposeMetricsParameters(): List<String> {
             add("-P")
             add(
                 "plugin" +
-                    ":androidx.compose.compiler.plugins.kotlin" +
-                    ":reportsDestination=${reportsFolder.absolutePath}",
+                        ":androidx.compose.compiler.plugins.kotlin" +
+                        ":reportsDestination=${reportsFolder.absolutePath}",
             )
         }
     }

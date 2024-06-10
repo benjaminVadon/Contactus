@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.callbackFlow
 import kotlinx.coroutines.flow.launchIn
-import org.example.utils.coroutines.scopes.AppCoroutineScopes.*
+import org.example.utils.coroutines.scopes.AppCoroutineScopes.Default
 import org.example.utils.coroutines.scopes.Scope
 import javax.inject.Inject
 import javax.inject.Singleton

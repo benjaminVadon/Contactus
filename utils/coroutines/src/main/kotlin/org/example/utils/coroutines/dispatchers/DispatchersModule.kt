@@ -1,12 +1,14 @@
 package org.example.utils.coroutines.dispatchers
 
-import org.example.utils.coroutines.dispatchers.AppDispatchers.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
+import org.example.utils.coroutines.dispatchers.AppDispatchers.Default
+import org.example.utils.coroutines.dispatchers.AppDispatchers.IO
+import org.example.utils.coroutines.dispatchers.AppDispatchers.Main
 
 @Suppress("unused")
 @Module

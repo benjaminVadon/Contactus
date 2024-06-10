@@ -6,7 +6,7 @@ android {
     namespace = "org.example.utils.navigation"
 }
 
-dependencies{
+dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(projects.utils.mvi)
     testImplementation(libs.bundles.test)

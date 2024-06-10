@@ -3,7 +3,6 @@ package org.example.gradle.plugins
 import org.example.gradle.utils.apply
 import org.example.gradle.utils.implementation
 import org.example.gradle.utils.ksp
-import org.example.gradle.utils.withPlugins
 import org.gradle.accessors.dm.LibrariesForLibs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
