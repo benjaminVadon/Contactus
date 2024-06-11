@@ -31,10 +31,7 @@ public class ComposePlugin : Plugin<Project> {
 private fun Project.configureCompose(libs: LibrariesForLibs) {
     configure<BaseExtension> {
         buildFeatures.compose = true
-
-        composeOptions {
-            kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
-        }
+        composeOptions.kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     }
 
     tasks.withType<KotlinCompile>().configureEach {
