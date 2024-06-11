@@ -1,6 +1,7 @@
 package org.example.contactus.mainActivityContent.components
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -14,7 +15,10 @@ import org.example.utils.designSystem.AppThemeForPreview
 
 @Composable
 internal fun ContentForState(state: MainState) {
-    Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+    Scaffold(
+        modifier = Modifier.fillMaxSize(),
+        contentWindowInsets = WindowInsets(0, 0, 0, 0),
+    ) { innerPadding ->
         Column(modifier = Modifier.padding(innerPadding)) {
             Navigation(
                 modifier = Modifier

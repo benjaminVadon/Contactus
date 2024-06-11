@@ -42,4 +42,5 @@ dependencies {
     implementation(projects.utils.coroutines)
     implementation(projects.utils.designSystem)
     implementation(projects.utils.mvi)
+    implementation(projects.utils.sharedResources)
 }
