@@ -24,5 +24,6 @@ include(":data:connectivity")
 include(":domain:connectivity")
 
 include(":utils:coroutines")
+include(":utils:designSystem")
 include(":utils:mvi")
 include(":utils:navigation")
