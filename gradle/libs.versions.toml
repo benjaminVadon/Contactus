@@ -23,6 +23,7 @@ lifecycleRuntimeKtx = "2.8.1"
 mockk = "1.13.8"
 navigation = "2.7.7"
 semver = "1.4.2"
+splashScreen = "1.0.1"
 
 appcompat = "1.7.0"
 material = "1.12.0"
@@ -44,6 +45,7 @@ androidx-compose-ui-text-google-fonts = { module = "androidx.compose.ui:ui-text-
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 androidx-compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
+androidx-core-splash-screen = { module = "androidx.core:core-splashscreen", version.ref = "splashScreen" }
 androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
 androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }

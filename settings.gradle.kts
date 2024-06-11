@@ -19,6 +19,9 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 
 rootProject.name = "Contactus"
+
+include(":app")
+
 include(":data:connectivity")
 
 include(":domain:connectivity")
