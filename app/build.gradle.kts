@@ -27,7 +27,6 @@ android {
     }
 }
 dependencies {
-
     testImplementation(libs.bundles.test)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -39,8 +38,8 @@ dependencies {
     implementation(libs.hilt.navigation.compose)
 
     implementation(projects.domain.connectivity)
+    implementation(projects.feature.contactList)
     implementation(projects.utils.coroutines)
     implementation(projects.utils.designSystem)
     implementation(projects.utils.mvi)
-
 }

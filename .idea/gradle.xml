@@ -32,7 +32,6 @@
             <option value="$PROJECT_DIR$/utils/coroutines" />
             <option value="$PROJECT_DIR$/utils/designSystem" />
             <option value="$PROJECT_DIR$/utils/mvi" />
-            <option value="$PROJECT_DIR$/utils/navigation" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

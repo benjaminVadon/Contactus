@@ -38,7 +38,6 @@ public class FeaturePlugin : Plugin<Project> {
             implementation(libs.hilt.navigation.compose)
             implementation(project(":utils:coroutines"))
             implementation(project(":utils:mvi"))
-            implementation(project(":utils:navigation"))
         }
     }
 }
