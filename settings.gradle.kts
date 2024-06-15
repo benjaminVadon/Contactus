@@ -28,6 +28,7 @@ include(":data:database")
 include(":data:network")
 
 include(":domain:connectivity")
+include(":domain:contacts")
 
 include(":feature:contactList")
 
