@@ -23,6 +23,8 @@ rootProject.name = "Contactus"
 include(":app")
 
 include(":data:connectivity")
+include(":data:data")
+include(":data:database")
 include(":data:network")
 
 include(":domain:connectivity")

@@ -14,9 +14,9 @@ import kotlinx.coroutines.test.advanceUntilIdle
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.runTest
 import kotlinx.coroutines.test.setMain
-import org.example.utils.mvi.contract.Action
-import org.example.utils.mvi.contract.Event
-import org.example.utils.mvi.contract.State
+import org.example.utils.mvi.contract.MVIAction
+import org.example.utils.mvi.contract.MVIEvent
+import org.example.utils.mvi.contract.MVIState
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
@@ -89,12 +89,12 @@ class MVIViewModelTest {
         }
     }
 
-    data class TestState(val count: Int = 0) : State
-    sealed class TestEvent : Event {
+    data class TestState(val count: Int = 0) : MVIState
+    sealed class TestEvent : MVIEvent {
         data object Increment : TestEvent()
     }
 
-    sealed class TestAction : Action {
+    sealed class TestAction : MVIAction {
         data object Increment : TestAction()
     }
 

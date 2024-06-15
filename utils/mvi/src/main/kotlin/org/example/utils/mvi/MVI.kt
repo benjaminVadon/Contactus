@@ -14,11 +14,11 @@ import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import org.example.utils.mvi.contract.Action
-import org.example.utils.mvi.contract.Event
-import org.example.utils.mvi.contract.State
+import org.example.utils.mvi.contract.MVIAction
+import org.example.utils.mvi.contract.MVIEvent
+import org.example.utils.mvi.contract.MVIState
 
-abstract class MVI<S : State, E : Event, A : Action>(initialState: S) : ViewModel() {
+abstract class MVI<S : MVIState, E : MVIEvent, A : MVIAction>(initialState: S) : ViewModel() {
     private val localUiStateFlow = MutableStateFlow(initialState)
     private val localActionFlow = MutableSharedFlow<A>()
 
