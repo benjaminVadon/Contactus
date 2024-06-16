@@ -21,7 +21,7 @@ import org.example.utils.sharedResources.R
 internal fun HowToJoin(userName: String, phone: String, cell: String, email: String) {
     Card(
         modifier = Modifier
-            .padding(8.dp)
+            .padding(vertical = 8.dp)
             .fillMaxWidth()
     ) {
         Column(

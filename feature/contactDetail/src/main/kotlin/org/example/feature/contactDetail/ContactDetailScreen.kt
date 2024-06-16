@@ -15,8 +15,5 @@ public fun NavGraphBuilder.contactDetail(): Unit =
         val contactDetailViewModel: ContactDetailViewModel = hiltViewModel()
         val state by contactDetailViewModel.uiStateFlow.collectAsState()
 
-        ContactDetailContent(
-            state = state,
-            processEvent = contactDetailViewModel::process,
-        )
+        ContactDetailContent(state = state)
     }

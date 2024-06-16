@@ -16,14 +16,12 @@ import org.example.feature.contactDetail.components.BigPictureStyle
 import org.example.feature.contactDetail.components.HeaderName
 import org.example.feature.contactDetail.components.HowToJoin
 import org.example.feature.contactDetail.components.MainContactInfo
-import org.example.feature.contactDetail.contract.ContactDetailEvents
 import org.example.feature.contactDetail.contract.ContactDetailState
 import org.example.utils.designSystem.AppThemeForPreview
 
 @Composable
 internal fun ContactDetailContent(
     state: ContactDetailState,
-    processEvent: (ContactDetailEvents) -> Unit,
 ) {
     Scaffold { paddingValues ->
         state.contact?.run {
@@ -49,7 +47,6 @@ internal fun ContactDetailContent(
 @Composable
 private fun ContactDetailContentPreview() = AppThemeForPreview {
     ContactDetailContent(
-        state = ContactDetailState(contact = ContactDomain.Sample),
-        processEvent = { }
+        state = ContactDetailState(contact = ContactDomain.Sample)
     )
 }
