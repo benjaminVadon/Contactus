@@ -1,9 +1,12 @@
 package org.example.domain.contacts
 
+import android.util.Log
 import androidx.paging.PagingData
 import androidx.paging.testing.asSnapshot
 import io.mockk.coEvery
+import io.mockk.every
 import io.mockk.mockk
+import io.mockk.mockkStatic
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.test.runTest
 import org.example.data.data.ContactsRepository
@@ -22,10 +25,13 @@ class GetContactsUseCaseTest {
     fun testGetContacts() = runTest {
         val contactEntity = ContactEntity(
             uid = 1,
-            lastName = "Doe",
             firstName = "John",
+            lastName = "Doe",
             pictureUrl = "pictureUrl",
-            thumbnailUrl = "thumbnailUrl"
+            thumbnailUrl = "thumbnailUrl",
+            age = 20,
+            gender = "Male",
+            nationality = "American"
         )
         val pagingDataEntity = PagingData.from(listOf(contactEntity))
         val expectedContactDomain = ContactDomain(
@@ -33,9 +39,16 @@ class GetContactsUseCaseTest {
             lastName = "Doe",
             firstName = "John",
             pictureUrl = "pictureUrl",
-            thumbnailUrl = "thumbnailUrl"
+            thumbnailUrl = "thumbnailUrl",
+            age = 20,
+            gender = "Male",
+            nationality = "American"
         )
 
+        mockkStatic(Log::class)
+        every { Log.isLoggable(any(), any()) } returns true
+        every { Log.v(any(), any(), any()) } returns 0
+        every { Log.d(any(), any(), any()) } returns 0
         coEvery { contactsRepository.contacts } returns flowOf(pagingDataEntity)
 
         val contacts: List<ContactDomain> = useCase().asSnapshot()

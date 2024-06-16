@@ -6,6 +6,9 @@ data class ContactDomain(
     val firstName: String,
     val pictureUrl: String,
     val thumbnailUrl: String,
+    val age: Int,
+    val nationality: String,
+    val gender: String,
 ) {
     companion object {
         val Sample = ContactDomain(
@@ -13,7 +16,10 @@ data class ContactDomain(
             lastName = "Doe",
             firstName = "John",
             pictureUrl = "https://picsum.photos/seed/contactus/600/600",
-            thumbnailUrl = "https://picsum.photos/seed/contactus/200/200"
+            thumbnailUrl = "https://picsum.photos/seed/contactus/200/200",
+            age = 42,
+            nationality = "US",
+            gender = "Male",
         )
     }
 }

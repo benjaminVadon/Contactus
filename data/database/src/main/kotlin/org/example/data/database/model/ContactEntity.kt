@@ -10,4 +10,7 @@ class ContactEntity(
     val lastName: String,
     val pictureUrl: String,
     val thumbnailUrl: String,
+    val age: Int,
+    val nationality: String,
+    val gender: String,
 )

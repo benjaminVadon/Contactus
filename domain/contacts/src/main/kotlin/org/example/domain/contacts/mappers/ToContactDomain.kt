@@ -8,10 +8,13 @@ class ToContactDomain @Inject constructor() {
     operator fun invoke(contactEntity: ContactEntity): ContactDomain = with(contactEntity) {
         ContactDomain(
             id = uid,
-            firstName = firstName,
             lastName = lastName,
+            firstName = firstName,
             pictureUrl = pictureUrl,
             thumbnailUrl = thumbnailUrl,
+            age = age,
+            nationality = nationality,
+            gender = gender,
         )
     }
 }

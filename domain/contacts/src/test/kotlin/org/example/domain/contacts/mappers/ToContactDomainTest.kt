@@ -12,17 +12,23 @@ class ToContactDomainTest {
     fun testMapping() {
         val entity = ContactEntity(
             uid = 123,
-            lastName = "Doe",
             firstName = "John",
+            lastName = "Doe",
             pictureUrl = "pictureUrl",
-            thumbnailUrl = "thumbnailUrl"
+            thumbnailUrl = "thumbnailUrl",
+            age = 20,
+            gender = "Male",
+            nationality = "American"
         )
         val expectedDomain = ContactDomain(
             id = 123,
             lastName = "Doe",
             firstName = "John",
             pictureUrl = "pictureUrl",
-            thumbnailUrl = "thumbnailUrl"
+            thumbnailUrl = "thumbnailUrl",
+            age = 20,
+            gender = "Male",
+            nationality = "American"
         )
 
         val actualDomain = mapper(entity)

@@ -13,7 +13,7 @@ interface ContactDao {
     fun getAll(): PagingSource<Int, ContactEntity>
 
     @Query("SELECT * FROM contacts WHERE uid == :id LIMIT 1")
-    fun findById(id: Int): ContactEntity
+    fun findById(id: Int): ContactEntity?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(contactEntities: List<ContactEntity>)
