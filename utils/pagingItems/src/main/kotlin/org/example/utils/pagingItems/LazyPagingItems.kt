@@ -51,7 +51,7 @@ class LazyPagingItems<T : Any>(
 
     companion object {
         private val IncompleteLoadState = LoadState.NotLoading(false)
-        private val InitialLoadStates = LoadStates(
+        val InitialLoadStates = LoadStates(
             LoadState.Loading,
             IncompleteLoadState,
             IncompleteLoadState
