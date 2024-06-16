@@ -17,4 +17,7 @@ class ContactEntity(
     val phone: String,
     val cell: String,
     val email: String,
+    val country: String,
+    val city: String,
+    val state: String,
 )

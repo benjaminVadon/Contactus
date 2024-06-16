@@ -13,6 +13,9 @@ data class ContactDomain(
     val phone: String,
     val cell: String,
     val email: String,
+    val country: String,
+    val city: String,
+    val state: String,
 ) {
     companion object {
         val Sample = ContactDomain(
@@ -28,6 +31,9 @@ data class ContactDomain(
             phone = "1234567890",
             cell = "9876543210",
             email = "johndoe@example.com",
+            country = "United States",
+            city = "New York",
+            state = "New York",
         )
     }
 }

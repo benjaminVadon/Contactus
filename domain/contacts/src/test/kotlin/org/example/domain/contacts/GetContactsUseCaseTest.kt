@@ -31,7 +31,14 @@ class GetContactsUseCaseTest {
             thumbnailUrl = "thumbnailUrl",
             age = 20,
             gender = "Male",
-            nationality = "American"
+            nationality = "American",
+            userName = "johndoe",
+            phone = "1234567890",
+            cell = "9876543210",
+            email = "johndoe@example.com",
+            country = "US",
+            city = "New York",
+            state = "New York",
         )
         val pagingDataEntity = PagingData.from(listOf(contactEntity))
         val expectedContactDomain = ContactDomain(
@@ -42,7 +49,14 @@ class GetContactsUseCaseTest {
             thumbnailUrl = "thumbnailUrl",
             age = 20,
             gender = "Male",
-            nationality = "American"
+            nationality = "American",
+            userName = "johndoe",
+            phone = "1234567890",
+            cell = "9876543210",
+            email = "johndoe@example.com",
+            country = "US",
+            city = "New York",
+            state = "New York",
         )
 
         mockkStatic(Log::class)

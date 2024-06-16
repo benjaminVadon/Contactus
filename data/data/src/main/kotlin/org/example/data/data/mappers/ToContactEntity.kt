@@ -19,6 +19,9 @@ class ToContactEntity @Inject constructor() {
             phone = phone,
             cell = cell,
             email = email,
+            country = location.country,
+            city = location.city,
+            state = location.state,
         )
     }
 }

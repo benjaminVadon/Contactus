@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Contactus</string>
+    <string name="app_name" translatable="false">Contactus</string>
     <string name="age">Age</string>
     <string name="gender">Gender</string>
     <string name="nationality">Nationality</string>
@@ -8,4 +8,7 @@
     <string name="cell">Cell</string>
     <string name="email">Email</string>
     <string name="offlineMode">Offline mode</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
 </resources>
