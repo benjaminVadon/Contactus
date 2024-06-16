@@ -13,4 +13,8 @@ class ContactEntity(
     val age: Int,
     val nationality: String,
     val gender: String,
+    val userName: String,
+    val phone: String,
+    val cell: String,
+    val email: String,
 )

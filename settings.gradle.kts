@@ -35,6 +35,7 @@ include(":feature:contactDetail")
 
 include(":utils:coroutines")
 include(":utils:designSystem")
+include(":utils:forwardingPainter")
 include(":utils:mvi")
 include(":utils:pagingItems")
 include(":utils:resultAdapter")

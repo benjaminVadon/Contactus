@@ -9,6 +9,10 @@ data class ContactDomain(
     val age: Int,
     val nationality: String,
     val gender: String,
+    val userName: String,
+    val phone: String,
+    val cell: String,
+    val email: String,
 ) {
     companion object {
         val Sample = ContactDomain(
@@ -20,6 +24,10 @@ data class ContactDomain(
             age = 42,
             nationality = "US",
             gender = "Male",
+            userName = "johndoe",
+            phone = "1234567890",
+            cell = "9876543210",
+            email = "johndoe@example.com",
         )
     }
 }

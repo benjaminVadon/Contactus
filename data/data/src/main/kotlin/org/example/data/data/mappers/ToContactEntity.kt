@@ -15,6 +15,10 @@ class ToContactEntity @Inject constructor() {
             age = dob.age,
             nationality = nat,
             gender = gender,
+            userName = login.username,
+            phone = phone,
+            cell = cell,
+            email = email,
         )
     }
 }

@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -20,6 +22,8 @@ import org.example.domain.contacts.model.ContactDomain
 import org.example.feature.contactList.contract.ContactListEvents
 import org.example.feature.contactList.contract.ContactListEvents.OnContactClick
 import org.example.utils.designSystem.AppThemeForPreview
+import org.example.utils.forwardingPainter.forwardingPainter
+import org.example.utils.sharedResources.R
 
 @Composable
 internal fun ContactItem(
@@ -33,12 +37,18 @@ internal fun ContactItem(
             .clickable { processEvent(OnContactClick(item.id)) },
         verticalAlignment = Alignment.CenterVertically
     ) {
+        val placeHolder = forwardingPainter(
+            painter = painterResource(id = R.drawable.place_holder),
+            colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.primary)
+        )
         AsyncImage(
             model = thumbnailUrl,
             modifier = Modifier
                 .size(80.dp)
                 .clip(RoundedCornerShape(topEnd = 20.dp, bottomEnd = 20.dp)),
             contentDescription = null,
+            placeholder = placeHolder,
+            error = placeHolder,
         )
         Text(
             text = "$lastName $firstName",

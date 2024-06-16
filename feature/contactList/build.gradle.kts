@@ -14,6 +14,7 @@ dependencies {
     implementation(projects.domain.contacts)
     implementation(projects.utils.coroutines)
     implementation(projects.utils.designSystem)
+    implementation(projects.utils.forwardingPainter)
     implementation(projects.utils.pagingItems)
     implementation(projects.utils.sharedResources)
 }

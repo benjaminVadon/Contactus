@@ -15,6 +15,10 @@ class ToContactDomain @Inject constructor() {
             age = age,
             nationality = nationality,
             gender = gender,
+            userName = userName,
+            phone = phone,
+            cell = cell,
+            email = email,
         )
     }
 }
