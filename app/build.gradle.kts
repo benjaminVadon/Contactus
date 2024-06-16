@@ -41,6 +41,7 @@ dependencies {
 
     implementation(projects.domain.connectivity)
     implementation(projects.feature.contactList)
+    implementation(projects.feature.contactDetail)
     implementation(projects.utils.coroutines)
     implementation(projects.utils.designSystem)
     implementation(projects.utils.mvi)

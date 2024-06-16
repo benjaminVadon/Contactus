@@ -31,6 +31,7 @@ include(":domain:connectivity")
 include(":domain:contacts")
 
 include(":feature:contactList")
+include(":feature:contactDetail")
 
 include(":utils:coroutines")
 include(":utils:designSystem")

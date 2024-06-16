@@ -4,6 +4,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import org.example.feature.contactDetail.ContactDetailScreen
+import org.example.feature.contactDetail.contactDetail
 import org.example.feature.contactList.ContactListNavigation
 import org.example.feature.contactList.ContactListScreen
 import org.example.feature.contactList.contactList
@@ -19,7 +21,8 @@ internal fun Navigation(
 ) {
     contactList(
         ContactListNavigation(
-            goToContactDetails = {}
+            goToContactDetails = { navController.navigate(ContactDetailScreen(it)) }
         )
     )
+    contactDetail()
 }
