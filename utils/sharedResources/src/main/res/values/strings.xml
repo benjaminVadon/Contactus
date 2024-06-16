@@ -7,4 +7,5 @@
     <string name="phone">Phone</string>
     <string name="cell">Cell</string>
     <string name="email">Email</string>
+    <string name="offlineMode">Offline mode</string>
 </resources>
