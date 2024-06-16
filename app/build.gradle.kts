@@ -18,7 +18,9 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = true
+            signingConfig = signingConfigs.findByName("debug")
+            isMinifyEnabled = false
+            isShrinkResources = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -28,8 +30,8 @@ android {
 }
 dependencies {
     testImplementation(libs.bundles.test)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.androidx.test.ext.junit)
+    androidTestImplementation(libs.androidx.test.espresso)
 
     implementation(libs.bundles.androidx.compose)
     implementation(libs.bundles.androidx.navigation)

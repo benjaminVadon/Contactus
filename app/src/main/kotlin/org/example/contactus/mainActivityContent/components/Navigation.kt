@@ -17,5 +17,9 @@ internal fun Navigation(
     navController = navController,
     startDestination = ContactListScreen
 ) {
-    contactList(ContactListNavigation())
+    contactList(
+        ContactListNavigation(
+            goToContactDetails = {}
+        )
+    )
 }

@@ -16,9 +16,7 @@ internal class MainActivityContentViewModel @Inject constructor(
     private val isInternetConnectedUseCase: IsInternetConnectedUseCase,
     @Dispatcher(Default) private val dispatcher: CoroutineDispatcher
 ) : MVI<MainState, MainEvents, MainActions>(MainState()) {
-    override fun process(event: MainEvents): Unit = when (event) {
-        else -> {}
-    }
+    override fun process(event: MainEvents) {}
 
     init {
         observeInternetConnection()

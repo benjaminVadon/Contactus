@@ -1,5 +1,5 @@
 package org.example.contactus.mainActivityContent.contract
 
-import org.example.utils.mvi.contract.Event
+import org.example.utils.mvi.contract.MVIEvent
 
-class MainEvents : Event
+class MainEvents : MVIEvent
