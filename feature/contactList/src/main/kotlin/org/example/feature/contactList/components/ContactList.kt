@@ -24,14 +24,6 @@ internal fun ContactList(
                 )
             }
         }
-//        items(count = items.size) { index ->
-//            items[index]?.let {
-//                ContactItem(
-//                    item = it,
-//                    processEvent = processEvent,
-//                )
-//            }
-//        }
         if (isAppendLoading) {
             item { Loader() }
         }

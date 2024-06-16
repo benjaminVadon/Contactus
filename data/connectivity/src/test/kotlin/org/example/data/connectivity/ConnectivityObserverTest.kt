@@ -64,12 +64,10 @@ class ConnectivityObserverTest {
 
         val callback = connectivityObserver.networkCallback
 
-        // Simulate connectivity available
         callback.onAvailable(mockk())
         callback.onCapabilitiesChanged(mockk(), networkCapabilities)
         assertTrue(connectivityObserver.isConnected.first())
 
-        // Simulate connectivity lost
         callback.onLost(mockk())
         assertFalse(connectivityObserver.isConnected.first())
     }

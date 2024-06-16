@@ -10,10 +10,9 @@ import kotlinx.serialization.Serializable
 @Serializable
 public data class ContactDetailScreen(val contactId: Int)
 
-public fun NavGraphBuilder.contactDetail(): Unit =
-    composable<ContactDetailScreen> {
-        val contactDetailViewModel: ContactDetailViewModel = hiltViewModel()
-        val state by contactDetailViewModel.uiStateFlow.collectAsState()
+public fun NavGraphBuilder.contactDetail(): Unit = composable<ContactDetailScreen> {
+    val contactDetailViewModel: ContactDetailViewModel = hiltViewModel()
+    val state by contactDetailViewModel.uiStateFlow.collectAsState()
 
-        ContactDetailContent(state = state)
-    }
+    ContactDetailContent(state = state)
+}
