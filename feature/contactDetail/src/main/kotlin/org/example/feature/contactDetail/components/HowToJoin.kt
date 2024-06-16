@@ -19,9 +19,11 @@ import org.example.utils.sharedResources.R
 
 @Composable
 internal fun HowToJoin(userName: String, phone: String, cell: String, email: String) {
-    Card(modifier = Modifier
-        .padding(8.dp)
-        .fillMaxWidth()) {
+    Card(
+        modifier = Modifier
+            .padding(8.dp)
+            .fillMaxWidth()
+    ) {
         Column(
             modifier = Modifier.padding(16.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
