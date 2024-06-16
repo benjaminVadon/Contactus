@@ -9,9 +9,6 @@ import org.example.utils.sharedResources.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-internal fun TopBar() =
-    CenterAlignedTopAppBar(
-        title = {
-            Text(text = stringResource(id = R.string.app_name))
-        }
-    )
+internal fun TopBar() = CenterAlignedTopAppBar(
+    title = { Text(text = stringResource(id = R.string.app_name)) }
+)

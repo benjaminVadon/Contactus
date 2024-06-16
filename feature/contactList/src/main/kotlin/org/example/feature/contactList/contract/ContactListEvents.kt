@@ -1,5 +1,8 @@
 package org.example.feature.contactList.contract
 
-import org.example.utils.mvi.contract.Event
+import org.example.utils.mvi.contract.MVIEvent
 
-public class ContactListEvents : Event
+internal sealed interface ContactListEvents : MVIEvent {
+    @JvmInline
+    value class OnContactClick(val contactId: Int) : ContactListEvents
+}

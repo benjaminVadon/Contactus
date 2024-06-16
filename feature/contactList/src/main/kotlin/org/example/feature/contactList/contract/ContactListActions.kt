@@ -1,5 +1,8 @@
 package org.example.feature.contactList.contract
 
-import org.example.utils.mvi.contract.Action
+import org.example.utils.mvi.contract.MVIAction
 
-public class ContactListActions : Action
+internal sealed interface ContactListActions : MVIAction {
+    @JvmInline
+    value class GoToContactDetails(val contactId: Int) : ContactListActions
+}
