@@ -12,5 +12,8 @@ dependencies {
     implementation(libs.retrofit.gson)
     implementation(libs.gson)
     implementation(libs.okhttp.logger)
+    implementation(projects.domain.connectivity)
     implementation(projects.utils.resultAdapter)
+    testImplementation(libs.bundles.test)
+    testImplementation(libs.okhttp.mockwebserver)
 }
