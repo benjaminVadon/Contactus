@@ -13,7 +13,7 @@ android {
     defaultConfig {
         versionCode = appVersion.toCode()
         versionName = appVersion.toString()
-        resourceConfigurations += sequenceOf("en")
+        resourceConfigurations += sequenceOf("en", "fr")
     }
 
     buildTypes {

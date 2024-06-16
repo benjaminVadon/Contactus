@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="age">Age</string>
+    <string name="gender">Genre</string>
+    <string name="nationality">Nationalité</string>
+    <string name="userName">Nom d\'utilisateur</string>
+    <string name="phone">Téléphone</string>
+    <string name="cell">Mobile</string>
+    <string name="email">Email</string>
+    <string name="offlineMode">Mode hors ligne</string>
+    <string name="country">Pays</string>
+    <string name="state">État</string>
+    <string name="city">Ville</string>
+</resources>
