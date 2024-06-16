@@ -6,4 +6,6 @@ import org.example.data.database.model.ContactEntity
 
 abstract class ContactsRepository {
     abstract val contacts: Flow<PagingData<ContactEntity>>
+
+    abstract suspend fun getContactById(contactId: Int): ContactEntity?
 }

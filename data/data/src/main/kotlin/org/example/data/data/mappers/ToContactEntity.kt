@@ -8,10 +8,13 @@ class ToContactEntity @Inject constructor() {
     operator fun invoke(contact: Contact) = with(contact) {
         ContactEntity(
             uid = 0,
-            lastName = name.last,
             firstName = name.first,
+            lastName = name.last,
             pictureUrl = picture.large,
             thumbnailUrl = picture.medium,
+            age = dob.age,
+            nationality = nat,
+            gender = gender,
         )
     }
 }

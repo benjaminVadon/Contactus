@@ -25,4 +25,8 @@ class ContactsRepositoryImpl @Inject constructor(
 
     override val contacts: Flow<PagingData<ContactEntity>>
         get() = pager.flow
+
+    override suspend fun getContactById(contactId: Int): ContactEntity? =
+        contactDao.findById(contactId)
+
 }
