@@ -25,7 +25,7 @@ class SyncedItemSnapshotListTest {
 
     @Test
     fun testEmptyList() {
-        val emptyList = SyncedItemSnapshotList.empty<String>()
+        val emptyList = SyncedItemSnapshotList.initial<String>()
 
         assertEquals(0, emptyList.size)
         assertEquals(0, emptyList.placeholdersBefore)
