@@ -1,5 +1,6 @@
 plugins {
     id("org.example.android-library")
+    id("org.example.compose")
 }
 
 android {
