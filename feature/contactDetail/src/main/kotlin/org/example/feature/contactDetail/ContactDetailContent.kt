@@ -55,7 +55,7 @@ internal fun ContactDetailContent(
                         model = pictureUrl,
                         modifier = Modifier
                             .height(300.dp)
-                            .aspectRatio(.75f)
+                            .aspectRatio(.85f)
                             .clip(RoundedCornerShape(topEnd = 40.dp, bottomEnd = 40.dp)),
                         contentDescription = null,
                         contentScale = ContentScale.Crop
