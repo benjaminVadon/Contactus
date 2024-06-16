@@ -18,7 +18,14 @@ class ToContactDomainTest {
             thumbnailUrl = "thumbnailUrl",
             age = 20,
             gender = "Male",
-            nationality = "American"
+            nationality = "American",
+            userName = "johndoe",
+            phone = "1234567890",
+            cell = "9876543210",
+            email = "johndoe@example.com",
+            country = "US",
+            city = "New York",
+            state = "New York",
         )
         val expectedDomain = ContactDomain(
             id = 123,
@@ -28,7 +35,14 @@ class ToContactDomainTest {
             thumbnailUrl = "thumbnailUrl",
             age = 20,
             gender = "Male",
-            nationality = "American"
+            nationality = "American",
+            userName = "johndoe",
+            phone = "1234567890",
+            cell = "9876543210",
+            email = "johndoe@example.com",
+            country = "US",
+            city = "New York",
+            state = "New York",
         )
 
         val actualDomain = mapper(entity)
