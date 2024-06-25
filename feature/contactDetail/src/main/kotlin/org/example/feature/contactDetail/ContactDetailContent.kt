@@ -1,13 +1,10 @@
 package org.example.feature.contactDetail
 
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.asPaddingValues
-import androidx.compose.foundation.layout.calculateEndPadding
-import androidx.compose.foundation.layout.calculateStartPadding
 import androidx.compose.foundation.layout.ime
 import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
@@ -18,7 +15,6 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import org.example.domain.contacts.model.ContactDomain
@@ -59,17 +55,6 @@ internal fun ContactDetailContent(
     }
 }
 
-@Composable
-private fun PaddingValues.exceptTopPadding(): PaddingValues {
-    val layoutDirection = LocalLayoutDirection.current
-
-    return PaddingValues(
-        top = 0.dp,
-        bottom = calculateBottomPadding(),
-        end = calculateEndPadding(layoutDirection),
-        start = calculateStartPadding(layoutDirection)
-    )
-}
 @Preview
 @Composable
 private fun ContactDetailContentPreview() = AppThemeForPreview {
